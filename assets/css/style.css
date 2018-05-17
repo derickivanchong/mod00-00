@@ -28,36 +28,75 @@ section{
 
 section#bio{
 	background-color: #692b44;
+	background-image: url('../img/pattern.png');
+	background-size: cover;
 	position: relative;
 }		
+
+section#bio > div {
+	background-color: rgba(105,43,68,0.7);
+	width: 100%;
+	height: 100vh;
+}
+
 
 section#bio,
 section#bio a {
 	color: #fff;
 }
 
+section#bio > div > header > p {
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
 
-section#bio > div#details > img {
+section#bio header > div > p > a{
+	text-decoration: none;
+}
+
+section#bio > div > header > p > a:hover {
+	text-decoration: underline;
+	color: yellow;
+}
+
+
+section#bio > div > header {
+	position: relative;
+}
+
+section#bio > div > header > p:last-child {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+section#bio > div > div#details > img {
 	border-radius: 50%;
 	width: 200px;
 	border: 5px solid white;
 	padding: 2px;
 }
 
-section#bio > div#details > h1,
-section#bio > div#details > ul { 	
+section#bio > div > div#details > h1,
+section#bio > div > div#details > ul { 	
 		font-family: 'Oswald', sans-serif;
 		padding-top: 15px;
 		padding-bottom: 15px;
 	}
 
-section#bio > div#details > h1{
+section#bio > div > div#details > h1{
 	font-size: 50px;	
 }
 
-section#bio > div#details > ul {
+section#bio > div > div#details > ul {
 	list-style: none;
 	font-size: 25px;
+}
+
+
+section#bio> div > div#details > p {
+	line-height: 1.5;
 }
 
 
